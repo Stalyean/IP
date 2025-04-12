@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iron Plumbing Utah - Fast, Reliable, Stormproof Service" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Iron Plumbing Utah</title>
+</head>
+<body>
+  <header class="navbar">
+    <img src="assets/logo.png" alt="Iron Plumbing Logo" class="logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="https://iron-plumbing-kdxkmv6dmqdpkxthl6dbod.streamlit.app/" target="_blank" class="btn-primary">Launch Live App</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <section class="hero">
+    <canvas id="pipesCanvas"></canvas>
+    <div class="hero-text">
+      <h1>Strength. Speed. Stormproof Plumbing.</h1>
+      <p>Serving Utah with bold performance and unbeatable service.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Iron Plumbing Utah is built on muscle, trust, and time-tested reliability.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Emergency Repairs</li>
+      <li>Residential Installations</li>
+      <li>Commercial Systems</li>
+      <li>Stormproof Upgrades</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@ironplumbingutah.com</p>
+    <p>Phone: (801) 555-PIPE</p>
+  </section>
+
+  <button id="backToTop">⬆</button>
+
+  <script src="pipes.js"></script>
+  <script>
+    document.getElementById('darkModeToggle').onclick = () => {
+      document.body.classList.toggle('dark');
+    };
+    document.getElementById('backToTop').onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

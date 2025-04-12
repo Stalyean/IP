@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #111;
+  transition: background 0.3s, color 0.3s;
+}
+.dark {
+  background: #111;
+  color: #eee;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+.navbar .logo {
+  height: 50px;
+}
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #d10000;
+  font-weight: bold;
+}
+.btn-primary {
+  background: #d10000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+#pipesCanvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+.hero-text {
+  position: relative;
+  text-align: center;
+  padding-top: 30vh;
+}
+section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #d10000;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+body.dark #backToTop {
+  background: #fff;
+  color: #d10000;
+}
+@media screen and (max-width: 768px) {
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
