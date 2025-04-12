@@ -312,3 +312,13 @@ footer nav a {
   margin-top: 0.25rem;
   color: #333;
 }
+
+/* Fade-in transition on page load */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+body.fade-in {
+  opacity: 1;
+}
