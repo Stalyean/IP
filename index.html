@@ -1,89 +1,587 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Iron Plumbing Utah - Fast, Reliable, Stormproof Service" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="style.css" />
   <title>Iron Plumbing Utah</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="icon" href="icons/horse-wrench-icon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-  <header class="navbar">
-    <img src="logo.png" alt="Iron Plumbing Logo" class="logo" />
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="https://iron-plumbing-kdxkmv6dmqdpkxthl6dbod.streamlit.app/" target="_blank" class="btn-primary">Launch Live App</a>
-    </nav>
-    <button id="darkModeToggle">🌙</button>
-  </header>
 
-  <section class="hero">
-    <canvas id="pipesCanvas"></canvas>
-    <div class="hero-text">
-      <h1>Strength. Speed. Stormproof Plumbing.</h1>
-      <p>Serving Utah with bold performance and unbeatable service.</p>
+<div class="logo-bar">
+  <div style="display: flex; align-items: center;">
+    <img src="icons/iron-plumbing-logo.png" alt="Iron Plumbing Utah Logo" />
+    <span class="brand-name">Iron Plumbing</span>
+  </div>
+  <div class="brand-slogan">Iron Strength, Fluid Precision</div>
+</div>
+
+  <div class="hero">
+    <div class="overlay">
+      <h1>Iron Plumbing Utah</h1>
+      <p class="slogan">Iron Strength, Fluid Precision</p>
+      <a href="#contact" class="cta-button">Get a Free Quote</a>
     </div>
-  </section>
+  </div>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Iron Plumbing Utah is built on muscle, trust, and time-tested reliability.</p>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
+  <nav class="navbar">
     <ul>
-      <li>Emergency Repairs</li>
-      <li>Residential Installations</li>
-      <li>Commercial Systems</li>
-      <li>Stormproof Upgrades</li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@ironplumbingutah.com</p>
-    <p>Phone: (801) 555-PIPE</p>
-  </section>
+  <main>
+    <section id="about">
+  <h2 data-aos="fade-up">About Iron Plumbing</h2>
+  <p data-aos="fade-up">Iron Plumbing is a family-owned business built on grit, skill, and a willingness to tackle the jobs that others turn down. Our team of licensed journeymen and apprentices specialize in both rough-in and finish plumbing across residential and small commercial projects. Whether it's a backed-up sewer line or a full repipe, we bring iron strength and fluid precision to every job.</p>
+  <p data-aos="fade-up">Serving Utah County and surrounding areas, we pride ourselves on transparent pricing, punctual service, and doing work we’re proud to sign our name to.</p>
+      <h2>Who We Are</h2>
+      <p>Iron Plumbing Utah is a co-op of expert plumbers dedicated to precision craftsmanship and strong client relationships. With modern technology and transparent pricing, we offer dependable service from licensed professionals.</p>
+    </section>
 
+    <section id="services" class="highlight-section">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card"><strong>Residential Plumbing</strong><br>Complete installs, repairs, and upgrades for homes of all sizes.</div>
+        <div class="card"><strong>Water Heater Installs</strong><br>Gas and electric systems installed to code with warranty.</div>
+        <div class="card"><strong>Pipe Repairs</strong><br>Fixing leaks, burst pipes, and deteriorated lines quickly.</div>
+        <div class="card"><strong>Remodel Plumbing</strong><br>Rough-in and finish plumbing for additions and renovations.</div>
+        <div class="card"><strong>Drain Cleaning</strong><br>Clearing clogs, roots, and blockages fast and clean.</div>
+        <div class="card"><strong>Fixture Replacements</strong><br>Updating faucets, toilets, and tubs with precision.</div>
+      </div>
+    </section>
+
+    
+<section id="contact">
+  <h2 data-aos="fade-up">Contact Iron Plumbing</h2>
+  <p data-aos="fade-up"><strong>Phone:</strong> <a href="tel:+13853768665">(385) 376-8665</a></p>
+  <p data-aos="fade-up"><strong>Service Area:</strong> Utah County and nearby areas</p>
+  <p data-aos="fade-up"><strong>Business Hours:</strong> Monday–Friday: 8 AM – 5 PM</p>
+  <p data-aos="fade-up"><strong>Email:</strong> <a href="mailto:ironplumbingut@gmail.com">ironplumbingut@gmail.com</a></p>
+</section>
+
+  <h2 data-aos="fade-up">Contact Us</h2>
+  <form action="https://formspree.io/f/mqkrpgvq" method="POST" class="contact-form" data-aos="fade-up">
+    <label for="name">Name</label>
+    <input type="text" name="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+  <p>Or reach us at <a href="mailto:ironplumbingut@gmail.com">ironplumbingut@gmail.com</a> | (801) 555-1234</p>
+</section>
+
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:+18015551234">(801) 555-1234</a></p>
+      <p>Email: <a href="mailto:ironplumbingut@gmail.com">ironplumbingut@gmail.com</a></p>
+      <p>Serving Eagle Mountain, Utah and surrounding areas.</p>
+    </section>
   
+
+
+<section id="testimonials">
+  <h2 data-aos="fade-up">What Our Customers Say</h2>
+  <div class="carousel-container" data-aos="fade-up">
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <p>"These guys were super professional and very easy to work with! We had them help us with a kitchen sink project and they did a fantastic job."</p>
+        <strong>— James B.</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"Super helpful, showed up right on time. Great customer service and great pricing. Highly recommend Iron Plumbing!"</p>
+        <strong>— Chelsea D.</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"We had a water heater and softener installed. They were amazing and professional. Thank you so much!"</p>
+        <strong>— Carlos A.</strong>
+      </div>
+    </div>
+  
+    <figure>
+      <a href="gallery/insulation-drainwork.jpg" target="_blank"><img src="gallery/insulation-drainwork.jpg" alt="Drain in Insulation" /></a>
+      <figcaption>“Just a little PVC with a side of itchy regret.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/boiler-wall-chaos.jpg" target="_blank"><img src="gallery/boiler-wall-chaos.jpg" alt="Wall of Boilers" /></a>
+      <figcaption>“It’s not spaghetti… it’s spaghetti code. For plumbing.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/underground-squid-pipes.jpg" target="_blank"><img src="gallery/underground-squid-pipes.jpg" alt="Twisty Underground Pipes" /></a>
+      <figcaption>“We’re not saying it’s an alien nest… but we’re not *not* saying it either.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/heater-darkroom.jpg" target="_blank"><img src="gallery/heater-darkroom.jpg" alt="Water Heater in Basement" /></a>
+      <figcaption>“She’s not much to look at, but she’ll warm your soul (and your shower).”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/fallen-porta-potty.jpg" target="_blank"><img src="gallery/fallen-porta-potty.jpg" alt="Tipped Porta-Potty" /></a>
+      <figcaption>“When the wind takes your dignity with it.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/wet-surprise.jpg" target="_blank"><img src="gallery/wet-surprise.jpg" alt="Mud Leak Corner" /></a>
+      <figcaption>“That’s not a puddle. That’s a plumbing plot twist.”</figcaption>
+    </figure>
+
+
+    <figure>
+      <a href="gallery/machine-wall.jpg" target="_blank"><img src="gallery/machine-wall.jpg" alt="machine-wall.jpg" /></a>
+      <figcaption>“Looks like plumbing. Feels like a CNC machine. Functions like a champ.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/shovel-trench.jpg" target="_blank"><img src="gallery/shovel-trench.jpg" alt="shovel-trench.jpg" /></a>
+      <figcaption>“He went to dig and never came back. We honor him with perfectly sloped PVC.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/cursed-elbow.jpg" target="_blank"><img src="gallery/cursed-elbow.jpg" alt="cursed-elbow.jpg" /></a>
+      <figcaption>“It’s all fun and games until the snake bites back.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/pipe-nightmare.jpg" target="_blank"><img src="gallery/pipe-nightmare.jpg" alt="pipe-nightmare.jpg" /></a>
+      <figcaption>“New fear unlocked: whatever this was… and wherever it came from.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/framing-rough-plumbing.jpg" target="_blank"><img src="gallery/framing-rough-plumbing.jpg" alt="framing-rough-plumbing.jpg" /></a>
+      <figcaption>“Rough plumbing so clean the inspector shed a tear.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/foundation-dig-view.jpg" target="_blank"><img src="gallery/foundation-dig-view.jpg" alt="foundation-dig-view.jpg" /></a>
+      <figcaption>“A beautiful day to bury pipe and back pain.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/laundry-tangle.jpg" target="_blank"><img src="gallery/laundry-tangle.jpg" alt="laundry-tangle.jpg" /></a>
+      <figcaption>“When you tell the apprentice: red is hot, blue is cold, and black is… creative.”</figcaption>
+    </figure>
+    
+
+    <figure>
+      <a href="gallery/pipe-matrix.jpg" target="_blank"><img src="gallery/pipe-matrix.jpg" alt="Pipe Matrix" /></a>
+      <figcaption>“Plumbing or power station? Either way, we bent reality to make it work.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/pvc-convergence.jpg" target="_blank"><img src="gallery/pvc-convergence.jpg" alt="Converging Pipes" /></a>
+      <figcaption>“Where four drain lines meet to discuss their futures.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/rotted-elbow.jpg" target="_blank"><img src="gallery/rotted-elbow.jpg" alt="Busted Elbow" /></a>
+      <figcaption>“This one gave up faster than my New Year’s resolution.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/mystery-plug.jpg" target="_blank"><img src="gallery/mystery-plug.jpg" alt="Nasty Clog" /></a>
+      <figcaption>“We found the blockage. We wish we hadn’t.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/basement-concrete-lines.jpg" target="_blank"><img src="gallery/basement-concrete-lines.jpg" alt="Framed Concrete" /></a>
+      <figcaption>“Roughed in, mapped out, and ready to rule this basement.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/trench-boss.jpg" target="_blank"><img src="gallery/trench-boss.jpg" alt="Trench Worker" /></a>
+      <figcaption>“Just one man, a trench, and a dream.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/twister-lines.jpg" target="_blank"><img src="gallery/twister-lines.jpg" alt="Red and Blue Lines" /></a>
+      <figcaption>“When you try to play Twister with hot and cold water lines.”</figcaption>
+    </figure>
+
+</div>
+</section>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 5000);
+</script>
+
+  <h2 data-aos="fade-up">What Our Customers Say</h2>
+  <div class="carousel-container" data-aos="fade-up">
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <p>"Iron Plumbing handled a sewer backup that other plumbers wouldn't touch. Honest, fast, and got it done right."</p>
+        <strong>— M. Allen</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"They installed our new water heater same-day. No fuss, fair price, and great communication."</p>
+        <strong>— T. Jensen</strong>
+      </div>
+      <div class="carousel-slide">
+        <p>"When our remodel contractor bailed, Iron Plumbing came in and roughed the entire basement — on time and clean."</p>
+        <strong>— L. Romero</strong>
+      </div>
+    </div>
+  
+    <figure>
+      <a href="gallery/insulation-drainwork.jpg" target="_blank"><img src="gallery/insulation-drainwork.jpg" alt="Drain in Insulation" /></a>
+      <figcaption>“Just a little PVC with a side of itchy regret.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/boiler-wall-chaos.jpg" target="_blank"><img src="gallery/boiler-wall-chaos.jpg" alt="Wall of Boilers" /></a>
+      <figcaption>“It’s not spaghetti… it’s spaghetti code. For plumbing.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/underground-squid-pipes.jpg" target="_blank"><img src="gallery/underground-squid-pipes.jpg" alt="Twisty Underground Pipes" /></a>
+      <figcaption>“We’re not saying it’s an alien nest… but we’re not *not* saying it either.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/heater-darkroom.jpg" target="_blank"><img src="gallery/heater-darkroom.jpg" alt="Water Heater in Basement" /></a>
+      <figcaption>“She’s not much to look at, but she’ll warm your soul (and your shower).”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/fallen-porta-potty.jpg" target="_blank"><img src="gallery/fallen-porta-potty.jpg" alt="Tipped Porta-Potty" /></a>
+      <figcaption>“When the wind takes your dignity with it.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/wet-surprise.jpg" target="_blank"><img src="gallery/wet-surprise.jpg" alt="Mud Leak Corner" /></a>
+      <figcaption>“That’s not a puddle. That’s a plumbing plot twist.”</figcaption>
+    </figure>
+
+
+    <figure>
+      <a href="gallery/machine-wall.jpg" target="_blank"><img src="gallery/machine-wall.jpg" alt="machine-wall.jpg" /></a>
+      <figcaption>“Looks like plumbing. Feels like a CNC machine. Functions like a champ.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/shovel-trench.jpg" target="_blank"><img src="gallery/shovel-trench.jpg" alt="shovel-trench.jpg" /></a>
+      <figcaption>“He went to dig and never came back. We honor him with perfectly sloped PVC.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/cursed-elbow.jpg" target="_blank"><img src="gallery/cursed-elbow.jpg" alt="cursed-elbow.jpg" /></a>
+      <figcaption>“It’s all fun and games until the snake bites back.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/pipe-nightmare.jpg" target="_blank"><img src="gallery/pipe-nightmare.jpg" alt="pipe-nightmare.jpg" /></a>
+      <figcaption>“New fear unlocked: whatever this was… and wherever it came from.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/framing-rough-plumbing.jpg" target="_blank"><img src="gallery/framing-rough-plumbing.jpg" alt="framing-rough-plumbing.jpg" /></a>
+      <figcaption>“Rough plumbing so clean the inspector shed a tear.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/foundation-dig-view.jpg" target="_blank"><img src="gallery/foundation-dig-view.jpg" alt="foundation-dig-view.jpg" /></a>
+      <figcaption>“A beautiful day to bury pipe and back pain.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/laundry-tangle.jpg" target="_blank"><img src="gallery/laundry-tangle.jpg" alt="laundry-tangle.jpg" /></a>
+      <figcaption>“When you tell the apprentice: red is hot, blue is cold, and black is… creative.”</figcaption>
+    </figure>
+    
+
+    <figure>
+      <a href="gallery/pipe-matrix.jpg" target="_blank"><img src="gallery/pipe-matrix.jpg" alt="Pipe Matrix" /></a>
+      <figcaption>“Plumbing or power station? Either way, we bent reality to make it work.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/pvc-convergence.jpg" target="_blank"><img src="gallery/pvc-convergence.jpg" alt="Converging Pipes" /></a>
+      <figcaption>“Where four drain lines meet to discuss their futures.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/rotted-elbow.jpg" target="_blank"><img src="gallery/rotted-elbow.jpg" alt="Busted Elbow" /></a>
+      <figcaption>“This one gave up faster than my New Year’s resolution.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/mystery-plug.jpg" target="_blank"><img src="gallery/mystery-plug.jpg" alt="Nasty Clog" /></a>
+      <figcaption>“We found the blockage. We wish we hadn’t.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/basement-concrete-lines.jpg" target="_blank"><img src="gallery/basement-concrete-lines.jpg" alt="Framed Concrete" /></a>
+      <figcaption>“Roughed in, mapped out, and ready to rule this basement.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/trench-boss.jpg" target="_blank"><img src="gallery/trench-boss.jpg" alt="Trench Worker" /></a>
+      <figcaption>“Just one man, a trench, and a dream.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/twister-lines.jpg" target="_blank"><img src="gallery/twister-lines.jpg" alt="Red and Blue Lines" /></a>
+      <figcaption>“When you try to play Twister with hot and cold water lines.”</figcaption>
+    </figure>
+
+</div>
+</section>
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 5000);
+</script>
+
+  <h2 data-aos="fade-up">What Our Customers Say</h2>
+  <div class="testimonial" data-aos="fade-up">
+    <p>"Iron Plumbing Utah tackled a complex sewer line replacement in our century-old home. Their expertise and dedication were evident throughout the project."</p>
+    <strong>&mdash; Satisfied Customer</strong>
+  </div>
+  <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+    <p>"We had a major plumbing issue during a holiday weekend. Iron Plumbing Utah responded promptly and resolved the problem efficiently. Highly recommend!"</p>
+    <strong>&mdash; Happy Client</strong>
+  
+    <figure>
+      <a href="gallery/insulation-drainwork.jpg" target="_blank"><img src="gallery/insulation-drainwork.jpg" alt="Drain in Insulation" /></a>
+      <figcaption>“Just a little PVC with a side of itchy regret.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/boiler-wall-chaos.jpg" target="_blank"><img src="gallery/boiler-wall-chaos.jpg" alt="Wall of Boilers" /></a>
+      <figcaption>“It’s not spaghetti… it’s spaghetti code. For plumbing.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/underground-squid-pipes.jpg" target="_blank"><img src="gallery/underground-squid-pipes.jpg" alt="Twisty Underground Pipes" /></a>
+      <figcaption>“We’re not saying it’s an alien nest… but we’re not *not* saying it either.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/heater-darkroom.jpg" target="_blank"><img src="gallery/heater-darkroom.jpg" alt="Water Heater in Basement" /></a>
+      <figcaption>“She’s not much to look at, but she’ll warm your soul (and your shower).”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/fallen-porta-potty.jpg" target="_blank"><img src="gallery/fallen-porta-potty.jpg" alt="Tipped Porta-Potty" /></a>
+      <figcaption>“When the wind takes your dignity with it.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/wet-surprise.jpg" target="_blank"><img src="gallery/wet-surprise.jpg" alt="Mud Leak Corner" /></a>
+      <figcaption>“That’s not a puddle. That’s a plumbing plot twist.”</figcaption>
+    </figure>
+
+
+    <figure>
+      <a href="gallery/machine-wall.jpg" target="_blank"><img src="gallery/machine-wall.jpg" alt="machine-wall.jpg" /></a>
+      <figcaption>“Looks like plumbing. Feels like a CNC machine. Functions like a champ.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/shovel-trench.jpg" target="_blank"><img src="gallery/shovel-trench.jpg" alt="shovel-trench.jpg" /></a>
+      <figcaption>“He went to dig and never came back. We honor him with perfectly sloped PVC.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/cursed-elbow.jpg" target="_blank"><img src="gallery/cursed-elbow.jpg" alt="cursed-elbow.jpg" /></a>
+      <figcaption>“It’s all fun and games until the snake bites back.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/pipe-nightmare.jpg" target="_blank"><img src="gallery/pipe-nightmare.jpg" alt="pipe-nightmare.jpg" /></a>
+      <figcaption>“New fear unlocked: whatever this was… and wherever it came from.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/framing-rough-plumbing.jpg" target="_blank"><img src="gallery/framing-rough-plumbing.jpg" alt="framing-rough-plumbing.jpg" /></a>
+      <figcaption>“Rough plumbing so clean the inspector shed a tear.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/foundation-dig-view.jpg" target="_blank"><img src="gallery/foundation-dig-view.jpg" alt="foundation-dig-view.jpg" /></a>
+      <figcaption>“A beautiful day to bury pipe and back pain.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/laundry-tangle.jpg" target="_blank"><img src="gallery/laundry-tangle.jpg" alt="laundry-tangle.jpg" /></a>
+      <figcaption>“When you tell the apprentice: red is hot, blue is cold, and black is… creative.”</figcaption>
+    </figure>
+    
+
+    <figure>
+      <a href="gallery/pipe-matrix.jpg" target="_blank"><img src="gallery/pipe-matrix.jpg" alt="Pipe Matrix" /></a>
+      <figcaption>“Plumbing or power station? Either way, we bent reality to make it work.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/pvc-convergence.jpg" target="_blank"><img src="gallery/pvc-convergence.jpg" alt="Converging Pipes" /></a>
+      <figcaption>“Where four drain lines meet to discuss their futures.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/rotted-elbow.jpg" target="_blank"><img src="gallery/rotted-elbow.jpg" alt="Busted Elbow" /></a>
+      <figcaption>“This one gave up faster than my New Year’s resolution.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/mystery-plug.jpg" target="_blank"><img src="gallery/mystery-plug.jpg" alt="Nasty Clog" /></a>
+      <figcaption>“We found the blockage. We wish we hadn’t.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/basement-concrete-lines.jpg" target="_blank"><img src="gallery/basement-concrete-lines.jpg" alt="Framed Concrete" /></a>
+      <figcaption>“Roughed in, mapped out, and ready to rule this basement.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/trench-boss.jpg" target="_blank"><img src="gallery/trench-boss.jpg" alt="Trench Worker" /></a>
+      <figcaption>“Just one man, a trench, and a dream.”</figcaption>
+    </figure>
+    <figure>
+      <a href="gallery/twister-lines.jpg" target="_blank"><img src="gallery/twister-lines.jpg" alt="Red and Blue Lines" /></a>
+      <figcaption>“When you try to play Twister with hot and cold water lines.”</figcaption>
+    </figure>
+
+</div>
+</section>
+
+
+
+
+
+  <h2 data-aos="fade-up">Project Gallery</h2>
+  <div class="gallery-grid" data-aos="fade-up">
+    <figure><img src="gallery/project1.jpg" alt="Project 1"/><figcaption>Water Heater Installation</figcaption></figure>
+    <figure><img src="gallery/project2.jpg" alt="Project 2"/><figcaption>Clogged Drain Cleared</figcaption></figure>
+    <figure><img src="gallery/project3.jpg" alt="Project 3"/><figcaption>Full Basement Rough-In</figcaption></figure>
+    
+  </div>
+  <p style="text-align:center">Upload your project images into the <code>/gallery</code> folder.</p>
+</section>
+
+
+
 <section id="gallery">
-  <h2>Project Gallery</h2>
-  <div class="gallery-grid">
-    <figure><img src="insulation-drainwork.jpg" alt=""><figcaption>“Just a little PVC with a side of itchy regret.”</figcaption></figure>
-    <figure><img src="boiler-wall-chaos.jpg" alt=""><figcaption>“It’s not spaghetti… it’s spaghetti code. For plumbing.”</figcaption></figure>
-    <figure><img src="underground-squid-pipes.jpg" alt=""><figcaption>“Not saying it’s an alien nest… but maybe.”</figcaption></figure>
-    <figure><img src="pipe-nightmare.jpg" alt=""><figcaption>“New fear unlocked.”</figcaption></figure>
-    <figure><img src="laundry-tangle.jpg" alt=""><figcaption>“Red is hot. Blue is cold. Black is… creative.”</figcaption></figure>
-    <figure><img src="trench-boss.jpg" alt=""><figcaption>“One man. One trench. One dream.”</figcaption></figure>
-    <figure><img src="heater-darkroom.jpg" alt=""><figcaption>“She’ll warm your soul — and your shower.”</figcaption></figure>
-    <figure><img src="fallen-porta-potty.jpg" alt=""><figcaption>“When the wind takes your dignity with it.”</figcaption></figure>
-    <figure><img src="wet-surprise.jpg" alt=""><figcaption>“That’s not a puddle. That’s a plumbing plot twist.”</figcaption></figure>
-    <figure><img src="machine-wall.jpg" alt=""><figcaption>“Looks like plumbing. Feels like a CNC machine.”</figcaption></figure>
-    <figure><img src="shovel-trench.jpg" alt=""><figcaption>“He went to dig and never came back.”</figcaption></figure>
-    <figure><img src="cursed-elbow.jpg" alt=""><figcaption>“It’s all fun and games until the snake bites back.”</figcaption></figure>
-    <figure><img src="framing-rough-plumbing.jpg" alt=""><figcaption>“Rough plumbing so clean the inspector shed a tear.”</figcaption></figure>
-    <figure><img src="foundation-dig-view.jpg" alt=""><figcaption>“A beautiful day to bury pipe and back pain.”</figcaption></figure>
-    <figure><img src="pipe-matrix.jpg" alt=""><figcaption>“We bent reality to make it work.”</figcaption></figure>
-    <figure><img src="pvc-convergence.jpg" alt=""><figcaption>“Where four drain lines meet to discuss their futures.”</figcaption></figure>
-    <figure><img src="rotted-elbow.jpg" alt=""><figcaption>“This one gave up faster than my New Year’s resolution.”</figcaption></figure>
+  <h2 data-aos="fade-up">Project Gallery</h2>
+  <div class="gallery-grid lightbox-gallery" data-aos="fade-up">
+
+    <figure>
+      <a href="gallery/frankenstein-boiler.jpg" target="_blank"><img src="gallery/frankenstein-boiler.jpg" alt="frankenstein-boiler.jpg" /></a>
+      <figcaption>“Built with 70% copper, 20% confusion, and 10% ‘It was like that when we got here.’”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/mud-soup-repair.jpg" target="_blank"><img src="gallery/mud-soup-repair.jpg" alt="mud-soup-repair.jpg" /></a>
+      <figcaption>“It’s not a job until you’re ankle-deep in mystery soup.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/firewood-hot-tub.jpg" target="_blank"><img src="gallery/firewood-hot-tub.jpg" alt="firewood-hot-tub.jpg" /></a>
+      <figcaption>“DIY spa day: fueled by firewood and hope.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/industrial-sink.jpg" target="_blank"><img src="gallery/industrial-sink.jpg" alt="industrial-sink.jpg" /></a>
+      <figcaption>“When the client says ‘vintage… but make it industrial-chic.’”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/insulation-drainwork.jpg" target="_blank"><img src="gallery/insulation-drainwork.jpg" alt="insulation-drainwork.jpg" /></a>
+      <figcaption>“Just a little PVC with a side of itchy regret.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/boiler-wall-chaos.jpg" target="_blank"><img src="gallery/boiler-wall-chaos.jpg" alt="boiler-wall-chaos.jpg" /></a>
+      <figcaption>“It’s not spaghetti… it’s spaghetti code. For plumbing.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/underground-squid-pipes.jpg" target="_blank"><img src="gallery/underground-squid-pipes.jpg" alt="underground-squid-pipes.jpg" /></a>
+      <figcaption>“We’re not saying it’s an alien nest… but we’re not *not* saying it either.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/heater-darkroom.jpg" target="_blank"><img src="gallery/heater-darkroom.jpg" alt="heater-darkroom.jpg" /></a>
+      <figcaption>“She’s not much to look at, but she’ll warm your soul (and your shower).”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/fallen-porta-potty.jpg" target="_blank"><img src="gallery/fallen-porta-potty.jpg" alt="fallen-porta-potty.jpg" /></a>
+      <figcaption>“When the wind takes your dignity with it.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/wet-surprise.jpg" target="_blank"><img src="gallery/wet-surprise.jpg" alt="wet-surprise.jpg" /></a>
+      <figcaption>“That’s not a puddle. That’s a plumbing plot twist.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/pipe-matrix.jpg" target="_blank"><img src="gallery/pipe-matrix.jpg" alt="pipe-matrix.jpg" /></a>
+      <figcaption>“Plumbing or power station? Either way, we bent reality to make it work.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/pvc-convergence.jpg" target="_blank"><img src="gallery/pvc-convergence.jpg" alt="pvc-convergence.jpg" /></a>
+      <figcaption>“Where four drain lines meet to discuss their futures.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/rotted-elbow.jpg" target="_blank"><img src="gallery/rotted-elbow.jpg" alt="rotted-elbow.jpg" /></a>
+      <figcaption>“This one gave up faster than my New Year’s resolution.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/mystery-plug.jpg" target="_blank"><img src="gallery/mystery-plug.jpg" alt="mystery-plug.jpg" /></a>
+      <figcaption>“We found the blockage. We wish we hadn’t.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/basement-concrete-lines.jpg" target="_blank"><img src="gallery/basement-concrete-lines.jpg" alt="basement-concrete-lines.jpg" /></a>
+      <figcaption>“Roughed in, mapped out, and ready to rule this basement.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/trench-boss.jpg" target="_blank"><img src="gallery/trench-boss.jpg" alt="trench-boss.jpg" /></a>
+      <figcaption>“Just one man, a trench, and a dream.”</figcaption>
+    </figure>
+    
+    <figure>
+      <a href="gallery/twister-lines.jpg" target="_blank"><img src="gallery/twister-lines.jpg" alt="twister-lines.jpg" /></a>
+      <figcaption>“When you try to play Twister with hot and cold water lines.”</figcaption>
+    </figure>
+    
   </div>
 </section>
 
-  <button id="backToTop">⬆</button>
+</main>
 
-  <script src="pipes.js"></script>
+  <footer>
+  <div>
+    <p><strong>Iron Plumbing</strong> — Serving Utah County</p>
+    <p><a href="tel:+13853768665">(385) 376-8665</a> | <a href="mailto:ironplumbingut@gmail.com">ironplumbingut@gmail.com</a></p>
+    <nav>
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+    <p>&copy; 2025 Iron Plumbing. Serving Utah County. Call (385) 376-8665</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    document.getElementById('darkModeToggle').onclick = () => {
-      document.body.classList.toggle('dark');
-    };
-    document.getElementById('backToTop').onclick = () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+    AOS.init();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    window.addEventListener('scroll', () => {
+      document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
   </script>
 </body>
 </html>

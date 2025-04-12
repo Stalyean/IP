@@ -1,0 +1,314 @@
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1583337130417-3346a1a4a3cc?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.overlay .slogan {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.cta-button {
+  background-color: #b22222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  background: #0057b7;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #b22222;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #0057b7;
+  color: white;
+  padding: 0.75rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.testimonial {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-left: 4px solid #b87333;
+  max-width: 700px;
+  border-radius: 0.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+nav.scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0057b7;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.cta-button:hover {
+  background-color: #222;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: red;
+}
+
+.testimonial::before {
+  content: "★★★★★";
+  display: block;
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+footer p,
+footer a {
+  margin: 0.2rem 0;
+  color: #ccc;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.carousel-container {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 1 0 100%;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  position: relative;
+  transform: scale(1);
+}
+
+/* Logo & top header */
+.logo-bar {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.logo-bar img {
+  height: 50px;
+}
+
+.logo-bar .brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 1rem;
+  font-family: 'Anton', sans-serif;
+}
+
+nav {
+  background-color: #0057b7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  padding: 0.75rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #0057b7;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Additional layout polish */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer nav a {
+  margin: 0 0.5rem;
+  color: #ccc;
+}
+
+.lightbox-gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.lightbox-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.lightbox-gallery img:hover {
+  transform: scale(1.03);
+}
+
+.lightbox-gallery figcaption {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  color: #333;
+}
